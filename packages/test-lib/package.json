@@ -1,0 +1,42 @@
+{
+  "name": "@abccomp/test-lib",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/test-lib.cjs",
+  "module": "./dist/test-lib.js",
+  "exports": {
+    "./style": "./dist/index.css",
+    ".": {
+      "import": "./dist/test-lib.js",
+      "require": "./dist/test-lib.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite && tailwindcss -i ./src/styles.css -o ./dist/index.css --watch",
+    "build": "tsc && vite build && tailwindcss -i ./src/styles.css -o ./dist/index.css",
+    "preview": "vite preview",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src --max-warnings 0"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/tailwind-config": "workspace:*",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.5",
+    "vite-plugin-dts": "^4.5.0"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.3"
+  }
+}
