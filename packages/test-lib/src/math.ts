@@ -20,7 +20,7 @@ export function mypackage(id: string): void {
   toolbar.style.borderBottom = '1px solid #ccc';
   toolbar.style.padding = '5px';
   toolbar.style.display = 'flex';
-  toolbar.className = 'toolbar px-4 ui-py-2 bg-gray-800 text-black text-lg';
+  toolbar.className = 'toolbar bg-blue-500 px-4 bg- py-2 bg-gray-800 text-black text-lg';
   toolbar.style.gap = '10px';
 
   // Create the bold button
