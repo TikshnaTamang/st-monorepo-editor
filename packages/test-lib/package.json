@@ -13,7 +13,7 @@
   "main": "./dist/test-lib.cjs",
   "module": "./dist/test-lib.js",
   "exports": {
-    "./style": "./dist/index.css",
+    "./style": "./dist/test-lib.css",
     ".": {
       "import": "./dist/test-lib.js",
       "require": "./dist/test-lib.cjs"

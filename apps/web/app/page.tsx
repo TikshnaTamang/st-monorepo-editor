@@ -7,7 +7,7 @@ import { Button } from '@repo/ui/button';
 import styles from './page.module.css';
 import { add } from '@abccomp/test-lib';
 import { mypackage } from '@abccomp/test-lib';
-import '@abccomp/test-lib/style';
+import "@abccomp/test-lib"
 
 type Props = Omit<ImageProps, 'src'> & {
   srcLight: string;

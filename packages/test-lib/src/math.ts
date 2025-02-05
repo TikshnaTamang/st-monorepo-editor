@@ -20,7 +20,7 @@ export function mypackage(id: string): void {
   toolbar.style.borderBottom = '1px solid #ccc';
   toolbar.style.padding = '5px';
   toolbar.style.display = 'flex';
-  toolbar.className = 'toolbar px-4 py-2 bg-gray-800 text-black';
+  toolbar.className = 'toolbar px-4 ui-py-2 bg-gray-800 text-black text-lg';
   toolbar.style.gap = '10px';
 
   // Create the bold button
@@ -33,6 +33,7 @@ export function mypackage(id: string): void {
   const italicButton = document.createElement('button');
   italicButton.innerHTML = '<i>I</i>';
   italicButton.style.fontStyle = 'italic';
+italicButton.className = 'text-lg text-red-500';
   italicButton.onclick = () => document.execCommand('italic');
 
   // Create the underline button
