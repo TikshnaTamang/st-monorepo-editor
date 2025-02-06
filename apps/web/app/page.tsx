@@ -5,9 +5,8 @@ import React, { useEffect } from 'react';
 import Image, { type ImageProps } from 'next/image';
 import { Button } from '@repo/ui/button';
 import styles from './page.module.css';
-import { add } from '@abccomp/test-lib';
-import { mypackage } from '@abccomp/test-lib';
-
+import {createTextEditor} from '@abccomp/test-lib';
+import "@abccomp/test-lib/style"
 type Props = Omit<ImageProps, 'src'> & {
   srcLight: string;
   srcDark: string;
@@ -30,15 +29,14 @@ export default function Home() {
     const container = document.getElementById('editor123');
     if (container) {
       console.log('Container found', container);
-      mypackage('editor123');
+      createTextEditor("editor123");
     }
   }, []);
 
   return (
     <div className="">
       <div className='p-10'>
-        <div>{add(10, 30)}</div>
-        <div id='editor123' className='p-10 bg-slate-200'></div>
+        <div id="editor123" className='p-10 bg-slate-200'></div>
       </div>
 
 

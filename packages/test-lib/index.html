@@ -9,9 +9,20 @@
   <title>Vite + TS</title>
 </head>
 
-<body>
-  <div id="app p-2 m-4"></div>
-  <script type="module" src="/src/main.ts"></script>
+<body class="">
+  <div id="app1" class="p-10 m-4"></div>
+  <script type="module">
+    import { createTextEditor } from "/src/index.ts";
+
+    document.addEventListener("DOMContentLoaded", () => {
+      createTextEditor('app1');
+    });
+  </script>
 </body>
+<style>
+body{
+padding: 30px;
+}
+</style>
 
 </html>

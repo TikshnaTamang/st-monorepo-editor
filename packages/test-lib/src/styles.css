@@ -1,3 +1,100 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  box-sizing: border-box;
+}
+
+#app {
+  border: rgb(230, 234, 241) 1px solid;
+}
+
+/* H1 Styles */
+a{
+color: blue;
+cursor: pointer;
+text-decoration: underline;
+}
+h1 {
+    display: block;
+    font-size: 2em; /* Larger than H2 */
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+/* H2 Styles */
+h2 {
+    display: block;
+    font-size: 1.5em; /* Standard H2 size */
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+/* H3 Styles */
+h3 {
+    display: block;
+    font-size: 1.17em; /* Smaller than H2 */
+    margin-block-start: 0.75em;
+    margin-block-end: 0.75em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+/* H4 Styles */
+h4 {
+    display: block;
+    font-size: 1em; /* Same size as normal text but bold */
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+/* H5 Styles */
+h5 {
+    display: block;
+    font-size: 0.83em; /* Smaller than H4 */
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+/* H6 Styles */
+h6 {
+    display: block;
+    font-size: 0.67em; /* Smallest heading */
+    margin-block-start: 0.33em;
+    margin-block-end: 0.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+
+ol {
+  list-style-type: decimal; /* Numbers for ordered list */
+}
+
+ul {
+  list-style-type: disc; /* Bullets for unordered list */
+}
