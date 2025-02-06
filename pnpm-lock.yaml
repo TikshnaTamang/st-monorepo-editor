@@ -52,6 +52,34 @@ importers:
         specifier: 5.7.3
         version: 5.7.3
 
+  apps/playground:
+    dependencies:
+      '@abccomp/test-lib':
+        specifier: workspace:*
+        version: link:../../packages/test-lib
+      vite:
+        specifier: ^6.0.5
+        version: 6.0.11(@types/node@22.13.0)(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0)
+    devDependencies:
+      '@next/eslint-plugin-next':
+        specifier: ^15.1.6
+        version: 15.1.6
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
+      '@repo/tailwind-config':
+        specifier: workspace:*
+        version: link:../../packages/tailwind-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
+      '@types/node':
+        specifier: ^22.12.0
+        version: 22.13.0
+      typescript:
+        specifier: 5.7.3
+        version: 5.7.3
+
   apps/web:
     dependencies:
       '@abccomp/test-lib':
@@ -2535,11 +2563,6 @@ packages:
 
   semver@7.6.2:
     resolution: {integrity: sha512-FNAIBWCx9qcRhoHcgcJ0gvU7SN1lYU2ZXuSfl04bSC5OpvDHFyJCjdNHomPXxjQlCBU67YW64PzY7/VIEH7F2w==}
-    engines: {node: '>=10'}
-    hasBin: true
-
-  semver@7.6.3:
-    resolution: {integrity: sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -5545,9 +5568,6 @@ snapshots:
 
   semver@7.6.2: {}
 
-  semver@7.6.3:
-    optional: true
-
   semver@7.7.0: {}
 
   sentence-case@2.1.1:
@@ -5581,7 +5601,7 @@ snapshots:
     dependencies:
       color: 4.2.3
       detect-libc: 2.0.3
-      semver: 7.6.3
+      semver: 7.7.0
     optionalDependencies:
       '@img/sharp-darwin-arm64': 0.33.5
       '@img/sharp-darwin-x64': 0.33.5

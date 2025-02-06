@@ -1,0 +1,21 @@
+body{
+background-color: #AAB99A;
+margin: auto;
+
+}
+
+#app{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+border: black 1px solid;
+}
+
+#container{
+max-width: clamp(1200px, 70vw, 1200px);
+}
+
+editor123-text-area{
+background-color: white;
+}
